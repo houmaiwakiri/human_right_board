@@ -14,43 +14,53 @@
   <body>
     <nav>
       <div class="nav-wrapper">
-        <a href="#" class="brand-logo">人権</a>
+        <a href="index.html" class="brand-logo">子どもの人権</a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li><a href="./index.html">質問一覧</a></li>
           <li><a href="./register.html">質問作成</a></li>
         </ul>
       </div>
     </nav>
-    <div class="register">
-      <div class="Form">
-        <div class="Form-Item">
-          <p class="Form-Item-Label">
-            <span class="Form-Item-Label-Required">必須</span>ニックネーム
-          </p>
-          <input
-            type="text"
-            class="Form-Item-Input"
-            placeholder="例）こどもくん"
-          />
+    <div class="row">
+      <form class="col s12">
+        <div class="row">
+          <div class="input-field col s6">
+            <input placeholder="じんけんさん" id="first_name" type="text" class="validate">
+            <label　class="active" for="first_name">ニックネーム</label>
+          </div>
         </div>
-        <div class="Form-Item">
-          <p class="Form-Item-Label isMsg">
-            <span class="Form-Item-Label-Required">必須</span
-            >質問内容（しつもんないよう）
-          </p>
-          <textarea class="Form-Item-Textarea"></textarea>
+        <div class="row">
+          <form class="col s12">
+            <div class="row">
+              <div class="input-field col s12">
+                <textarea id="textarea1" class="materialize-textarea"></textarea>
+                <label class="active" for="textarea1">質問内容（しつもんないよう）</label>
+              </div>
+            </div>
+          </form>
         </div>
-        <input type="submit" class="Form-Btn" value="送信する" />
-      </div>
+      </form>
     </div>
-    <div class="footer">
-      <div class="footer-logo"><a href=" index.html">子どもの人権</a></div>
-      <div class="footer-list">
-        <ul>
-          <li><a href="./index.html">質問一覧</a></li>
-          <li><a href="./register.html">質問作成</a></li>
-        </ul>
+    <footer class="page-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">子どもの人権</h5>
+            <p class="grey-text text-lighten-4">こんにちは</p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="index.html">質問一覧</a></li>
+              <li><a class="grey-text text-lighten-3" href="register.html">質問作成</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
-    </div>
+      <div class="footer-copyright">
+        <div class="container">
+        © 東洋大学　ライフデザイン学科　内田ゼミ
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
